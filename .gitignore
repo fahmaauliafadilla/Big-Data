@@ -1,1 +1,44 @@
+# ===== Data mentah =====
 data_proyek/
+*.csv
+*.json
+*.jsonl
+
+# ===== Hasil olahan Spark =====
+*.parquet
+*.crc
+_SUCCESS
+_temporary/
+spark-warehouse/
+metastore_db/
+derby.log
+
+# Streaming (output sink dan checkpoint)
+checkpoint/
+checkpoints/
+stream_output/
+output_stream/
+
+# Model ML yang tersimpan lokal 
+models/
+*.model
+
+# MongoDB
+mongo_data/
+*.wt
+*.bson
+WiredTiger*
+mongod.lock
+
+# Jupyter dan Python 
+.ipynb_checkpoints/
+_pycache_/
+*.pyc
+.ipynb_checkpoints
+.venv/
+.env
+
+# log
+*.log
+*.tmp
+.DS_Store
